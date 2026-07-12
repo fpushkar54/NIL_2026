@@ -1,6 +1,6 @@
 # NIL_2026
 Performance-Based College Football NIL Valuation Engine
-# 🏈 NIL Valuation Engine
+# NIL Valuation Engine
 
 A performance-based athlete valuation platform that estimates NCAA football NIL (Name, Image, and Likeness) value using a custom Player Value Model (PVM).
 
@@ -8,14 +8,14 @@ Built as part of an undergraduate research project examining whether on-field pe
 
 ---
 
-## 🚀 Live Demo
+## App Demo
 
-🔗 Streamlit App:
-(Insert your Streamlit URL here)
+Streamlit App:
+https://nilproject2026pkar.streamlit.app
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 The NIL Valuation Engine evaluates college football athletes by generating a Player Value Model (PVM) score based on position-specific production and efficiency metrics.
 
@@ -29,7 +29,7 @@ The application currently supports:
 
 ---
 
-## ✨ Features
+##  Features
 
 - Position-specific Player Value Models (PVM)
 - Interactive Streamlit dashboard
@@ -43,7 +43,7 @@ The application currently supports:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
 - Streamlit
@@ -55,7 +55,7 @@ The application currently supports:
 
 ---
 
-## 📊 Methodology
+## Methodology
 
 Each athlete is evaluated using a weighted Player Value Model (PVM).
 
@@ -85,7 +85,7 @@ The resulting PVM score is used to classify players into valuation tiers and est
 
 ---
 
-## 📈 Research Focus
+##  Research Focus
 
 This project accompanies a research paper investigating the relationship between:
 
@@ -97,7 +97,7 @@ The analysis compares custom player rankings against publicly available NIL valu
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 ### Home Page
 
@@ -119,7 +119,7 @@ The analysis compares custom player rankings against publicly available NIL valu
 
 ---
 
-## ⚙ Installation
+## Installation
 
 Clone the repository
 
@@ -141,7 +141,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 NIL_2026
@@ -156,7 +156,7 @@ NIL_2026
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Additional player positions
 - Automated data pipeline
@@ -166,7 +166,7 @@ NIL_2026
 
 ---
 
-## 👤 Author
+## Author
 
 Pushkar Pushkar
 
@@ -176,6 +176,6 @@ W. P. Carey School of Business
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
