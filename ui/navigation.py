@@ -77,30 +77,12 @@ def render_sidebar():
                 font_weight = "500"
                 bg          = "transparent"
 
-            st.markdown(f"""
-<div style="
-    display:flex; align-items:center; gap:10px;
-    padding:9px 12px 9px 16px;
-    margin-bottom:2px;
-    border-radius:8px;
-    background:{bg};
-    border-left:{border_left};
-    color:{text_color};
-    font-weight:{font_weight};
-    font-size:14px;
-    pointer-events:none;
-    user-select:none;
-">
-    <span style="color:{text_color}; display:flex; align-items:center;">{icon_svg}</span>
-    {label}
-</div>
-""", unsafe_allow_html=True)
-
+            # Render clickable HTML item (pointer-events removed so buttons register clicks)
             if st.button(
-    label,
-    key=f"nav_{page_key}",
-    use_container_width=True
-):
+                label,
+                key=f"nav_{page_key}",
+                use_container_width=True
+            ):
                 st.session_state.page = page_key
                 st.rerun()
 
