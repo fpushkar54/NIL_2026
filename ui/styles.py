@@ -34,6 +34,18 @@ header [data-testid="stHeaderActionElements"] { visibility: hidden; }
 [data-testid="stSidebar"] .stMarkdown p {
     color: #0d0d0d !important;
     font-family: 'Outfit', sans-serif !important;
+
+/* Make sidebar buttons transparent over custom HTML cards */
+[data-testid="stSidebar"] .stButton > button {
+    background: transparent !important;
+    color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 38px !important;
+    margin-top: 0px !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
 }
 
 /* ── Inputs ── */
