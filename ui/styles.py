@@ -34,10 +34,12 @@ header [data-testid="stHeaderActionElements"] { visibility: hidden; }
 [data-testid="stSidebar"] .stMarkdown p {
     color: #0d0d0d !important;
     font-family: 'Outfit', sans-serif !important;
+}
 
-/* Make sidebar buttons transparent over custom HTML cards */
+/* ── Make sidebar buttons transparent over custom HTML cards ── */
 [data-testid="stSidebar"] .stButton > button {
     background: transparent !important;
+    background-color: transparent !important;
     color: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -45,7 +47,18 @@ header [data-testid="stHeaderActionElements"] { visibility: hidden; }
     margin-top: 0px !important;
     position: relative !important;
     z-index: 2 !important;
+    opacity: 0 !important;
 }
+
+[data-testid="stSidebar"] .stButton > button:hover,
+[data-testid="stSidebar"] .stButton > button:active,
+[data-testid="stSidebar"] .stButton > button:focus {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 0 !important;
 }
 
 /* ── Inputs ── */
@@ -67,6 +80,7 @@ input[type="text"]:focus {
     box-shadow: 0 0 0 3px rgba(3,105,161,0.10) !important;
     outline: none !important;
 }
+
 /* ── Input Labels ── */
 label[data-testid="stWidgetLabel"] {
     color: #000000 !important;
@@ -149,6 +163,7 @@ hr {
 [data-testid="stMetric"] {
     background: transparent !important;
 }
+
 /* ── Alerts / Warning Messages ── */
 [data-testid="stAlert"] {
     background-color: #ffffff !important;
@@ -167,6 +182,7 @@ hr {
     font-weight: 700 !important;
     opacity: 1 !important;
 }
+
 /* ── Force Expander Text Dark ── */
 [data-testid="stExpander"] * {
     color: #0d0d0d !important;
