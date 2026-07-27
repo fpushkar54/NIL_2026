@@ -20,10 +20,10 @@ html, body, [class*="css"] {
     background-color: #f4f2ee;
 }
 
-/* ── Hide default Streamlit chrome ── */
+/* ── Hide default Streamlit chrome while keeping sidebar toggle ── */
 #MainMenu { visibility: hidden; }
 footer    { visibility: hidden; }
-header [data-testid="stHeaderActionElements"] { visibility: hidden; }
+header    { background: transparent !important; } 
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
