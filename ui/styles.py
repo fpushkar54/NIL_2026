@@ -23,7 +23,7 @@ html, body, [class*="css"] {
 /* ── Hide default Streamlit chrome ── */
 #MainMenu { visibility: hidden; }
 footer    { visibility: hidden; }
-header    { visibility: hidden; }
+header [data-testid="stHeaderActionElements"] { visibility: hidden; }
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
