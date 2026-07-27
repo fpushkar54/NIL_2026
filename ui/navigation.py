@@ -59,7 +59,7 @@ def render_sidebar():
         current = st.session_state.get("page", "home")
 
         for label, page_key in PAGES.items():
-            is_active = current == page_key
+            is_active = (current == page_key)
             icon_svg  = ICONS.get(label, "")
 
             accent_map = {"qb": "#0369a1", "rb": "#16a34a", "wr": "#c2410c"}
@@ -77,7 +77,27 @@ def render_sidebar():
                 font_weight = "500"
                 bg          = "transparent"
 
-            # Render clickable HTML item (pointer-events removed so buttons register clicks)
+            # Wrapper div that contains both custom HTML and the button
+            st.markdown(f"""
+<div style="
+    display:flex; align-items:center; gap:10px;
+    padding:9px 12px 9px 16px;
+    margin-bottom:-38px;
+    border-radius:8px;
+    background:{bg};
+    border-left:{border_left};
+    color:{text_color};
+    font-weight:{font_weight};
+    font-size:14px;
+    position:relative;
+    z-index:1;
+    pointer-events:none;
+">
+    <span style="color:{text_color}; display:flex; align-items:center;">{icon_svg}</span>
+    {label}
+</div>
+""", unsafe_allow_html=True)
+
             if st.button(
                 label,
                 key=f"nav_{page_key}",
